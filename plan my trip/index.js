@@ -50,7 +50,7 @@ const YesNoIntentHandler = {
         
         
         //判斷你的回答。若為"Yes"，針對對應的地點得分+1
-        if(handlerInput.requestEnvelope.request.intent.name == 'AMAZON.YesIntent'){
+        if(handlerInput.requestEnvelope.request.intent.name === 'AMAZON.YesIntent'){
             // 找出對應回答的地點
             let destinationMatch = data.questionDestinationMatch[currentQuestionCount];
             console.log(destinationMatch);
@@ -102,7 +102,7 @@ const LaunchRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = 'Welcome to Plan my trip. I can find the best vacation destination for you. To start it, just say plan it or start planing.';
+        const speechText = 'Welcome to Plan my trip. I can find the best vacation destination for you. To start it, just say plan it or start planning.';
         return handlerInput.responseBuilder
             .speak(speechText)
             .reprompt(speechText)
