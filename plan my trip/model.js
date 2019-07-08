@@ -23,7 +23,7 @@
                     "name": "TripIntnet",
                     "slots": [],
                     "samples": [
-                        "start planing",
+                        "start planning",
                         "plan it"
                     ]
                 },
