@@ -102,7 +102,7 @@ const LaunchRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = 'Welcome to Plan my trip. I can find the best vacation destination for you. To start it, just say plan it or start planing.';
+        const speechText = 'Welcome to Plan my trip. I can find the best vacation destination for you. To start it, just say plan it or start planning.';
         return handlerInput.responseBuilder
             .speak(speechText)
             .reprompt(speechText)
